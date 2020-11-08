@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drafts</title>
+    <title>House VOP</title>
     <!--========== Google fonts ==========-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&display=swap"
         rel="stylesheet">
@@ -19,11 +19,251 @@
     <!--========= Custom styles ==========-->
     <link rel="stylesheet" href="css/style.css">
     <!--========= Favicon ==========-->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
 </head>
 
 <body>
-
+    <!--========= Header ==========-->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!--========= Logo ==========-->
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип сайта" aria-describedby="logo" class="logo__img" />
+                    <div class="visually-hidden" hidden id="logo">
+                        Ссылка на домашнюю страницу.
+                    </div>
+                    <span class="logo__description">Жилой комплекс</span>
+                </div>
+                <!--========= Nav ==========-->
+                <nav class="main-menu">
+                    <ul class="main-menu__nav">
+                        <li class="main-menu__nav-item">
+                            <a class="main-menu__nav-link" href="">О комплексе</a>
+                        </li>
+                        <li class="main-menu__nav-item">
+                            <a class="main-menu__nav-link" href="#">Район</a>
+                        </li>
+                        <li class="main-menu__nav-item">
+                            <a class="main-menu__nav-link" href="#">Каталог квартир</a>
+                        </li>
+                        <li class="main-menu__nav-item">
+                            <a class="main-menu__nav-link" href="#">Ипотека</a>
+                        </li>
+                        <li class="main-menu__nav-item">
+                            <a class="main-menu__nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--========= section Hero ==========-->
+            <section class="hero">
+                <h1 class="hero__title">Жилой комплекс в историческом центре</h1>
+                <img src="img/mouse.svg" alt="навигация вниз">
+                <ul class="hero__contacts">
+                    <li class="hero__contacts-item">
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Наб. реки Фонтанки 10-15
+                        </a>
+                    </li>
+                    <li class="hero__contacts-item"><a href="tel:8 (812) 123-45-67">
+                            <i class="fas fa-phone-alt"></i>
+                            8 (812) 123-45-67
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </header>
+    <main>
+        <!--========= section Description ==========-->
+        <section class="description">
+            <div class="container">
+                <ul class="description__list">
+                    <li class="description__item">
+                        <img src="img/bench.svg" alt="логотип парка и сквера" class="description__image">
+                        <p class="description__paragraph">Рядом исторические парки и скверы</p>
+                    </li>
+                    <li class="description__item">
+                        <img src="img/building.svg" alt="логотип здания" class="description__image">
+                        <p class="description__paragraph">Полностью
+                            обустроенный</p>
+                    </li>
+                    <li class="description__item">
+                        <img src="img/fontain.svg" alt="логотип фонтана" class="description__image">
+                        <p class="description__paragraph">10 фонтанов
+                            на территории</p>
+                    </li>
+                    <li class="description__item">
+                        <img src="img/bicycle.svg" alt="логотип велосипеда" class="description__image">
+                        <p class="description__paragraph">6 км
+                            велодорожек</p>
+                    </li>
+                </ul>
+                <span class="numeration">&#8545</span>
+            </div>
+        </section>
+        <!--========= section Appartments ==========-->
+        <section class="apartments">
+            <div class="container">
+                <h2 class="section-title">Наши квартиры</h2>
+                <ul class="apartments__list">
+                    <li class="apartmens__item">
+                        <a href="#" class="appartments__link">
+                            <img src="img/appartments 1.jpg" alt="фото аппартаментов" class="apartments__img">
+                            <p class="apartments__title">Лофт — 3 этажа</p>
+                        </a>
+                    </li>
+                    <li class="apartmens__item">
+                        <a href="#" class="appartments__link">
+                            <img src="img/appartments 2.jpg" alt="фото аппартаментов" class="apartments__img">
+                            <p class="apartments__title">Лофт — 2 этажа</p>
+                        </a>
+                    </li>
+                    <li class="apartmens__item">
+                        <a href="#" class="appartments__link">
+                            <img src="img/appartments 3.jpg" alt="фото аппартаментов" class="apartments__img">
+                            <p class="apartments__title">Лофт — 3 этажа</p>
+                        </a>
+                    </li>
+                    <li class="apartmens__item">
+                        <a href="#" class="appartments__link">
+                            <img src="img/appartments 4.jpg" alt="фото аппартаментов" class="apartments__img">
+                            <p class="apartments__title">Лофт — 2 этажа</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--========= section Viewing ==========-->
+        <section class="viewing">
+            <div class="text-wrapper">
+                <h2 class="section-title">Хотите посмотреть?</h2>
+                <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                    тексты.
+                    Ты вдали страна семантика вскоре раз переписывается взгляд гор несколько подпоясал пор всемогущая
+                    журчит
+                    меня дал напоивший буквенных великий заголовок, пунктуация текстами коварный своего! Запятых,
+                    скатился
+                    реторический! Встретил текстов грамматики щеке свой своих, выйти агентство буквенных родного
+                    последний,
+                    своего страну!</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <span class="form__text">*Мы никому не передаем ваши данные.
+                    И не сохраняем ваш номер в базу.</span>
+                <input type="text" placeholder="Перезвоните мне">
+            </form>
+        </section>
+        <!--========= section Video review ==========-->
+        <section class="video-review">
+            <div class="container">
+                <iframe width="900" height="650" src="https://www.youtube.com/embed/wEgif19yz6A" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <button>
+                    <img src="img/play button.png" alt="кнопка проигрывания видео">
+                </button>
+            </div>
+        </section>
+        <!--========= section Map ==========-->
+        <section class="map" id="map">
+            <div class="container">
+                <h2 class="section-title">Район на карте</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1952220763105!2d30.731974315792304!3d46.48444667280697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDI5JzA0LjAiTiAzMMKwNDQnMDMuMCJF!5e0!3m2!1sru!2sua!4v1604845344255!5m2!1sru!2sua"
+                    width="100%" height="900" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </section>
+        <!--========= section Questions ==========-->
+        <section class="questions">
+            <h2 class="section-title">Район на карте</h2>
+            <form>
+                <span class="form__text">*Мы никому не передаем ваши данные.
+                    И не сохраняем ваш номер в базу.</span>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Перезвоните мне">
+            </form>
+        </section>
+    </main>
+    <!--========= Footer ==========-->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Логотип сайта" aria-describedby="logo" class="logo__img" />
+                <div class="visually-hidden" hidden id="logo">
+                    Ссылка на домашнюю страницу.
+                </div>
+                <span class="logo__description">Жилой комплекс</span>
+            </div>
+            <nav class="main-menu">
+                <ul class="main-menu__nav">
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="">О комплексе</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Район</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Каталог квартир</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Ипотека</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="#map" class="contacts__link">
+                        г. Одесса р-он Горсада
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="tel:8 (812) 123-45-67" class="contacts__link">
+                        Телефон: 8 (812) 123-45-67
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="#" class="contacts__link">
+                        Отдел продаж: 10:00 - 20:00
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="mailto:vip@housevip.ru" class="contacts__link">
+                        E-mail:<span>vip@housevip.ru</span>
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="https://www.youtube.com" class="social__item fab fa-youtube">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.vk.ru" class="social__item fab fa-vk">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.facebook.com" class="social__item fab fa-facebook-f">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com" class="social__item fab fa-instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
