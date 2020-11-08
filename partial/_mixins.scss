@@ -1,0 +1,11 @@
+@mixin propertyLink {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin hoverLink {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+}

@@ -29,17 +29,19 @@
             <div class="nav-wrapper">
                 <!--========= Logo ==========-->
                 <div class="logo">
-                    <img src="img/logo.png" alt="Логотип сайта" aria-describedby="logo" class="logo__img" />
-                    <div class="visually-hidden" hidden id="logo">
-                        Ссылка на домашнюю страницу.
-                    </div>
-                    <span class="logo__description">Жилой комплекс</span>
+                    <a href="#" class="logo__link">
+                        <img src="img/logo.png" alt="Логотип сайта" aria-describedby="logo" class="logo__img" />
+                        <div class="visually-hidden" hidden id="logo">
+                            Ссылка на домашнюю страницу.
+                        </div>
+                        <span class="logo__description">Жилой комплекс</span>
+                    </a>
                 </div>
                 <!--========= Nav ==========-->
                 <nav class="main-menu">
                     <ul class="main-menu__nav">
                         <li class="main-menu__nav-item">
-                            <a class="main-menu__nav-link" href="">О комплексе</a>
+                            <a class="main-menu__nav-link" href="#description">О комплексе</a>
                         </li>
                         <li class="main-menu__nav-item">
                             <a class="main-menu__nav-link" href="#">Район</a>
@@ -57,28 +59,31 @@
                 </nav>
             </div>
             <!--========= section Hero ==========-->
-            <section class="hero">
+            <div class="hero">
                 <h1 class="hero__title">Жилой комплекс в историческом центре</h1>
-                <img src="img/mouse.svg" alt="навигация вниз">
+                <a href="#description" class="hero__nav-down">
+                    <img src="img/mouse.svg" alt="навигация вниз">
+                </a>
                 <ul class="hero__contacts">
                     <li class="hero__contacts-item">
-                        <a href="#">
+                        <a href="#map">
                             <i class="fas fa-map-marker-alt"></i>
-                            Наб. реки Фонтанки 10-15
+                            г. Одесса р-он Горсада
                         </a>
                     </li>
                     <li class="hero__contacts-item"><a href="tel:8 (812) 123-45-67">
                             <i class="fas fa-phone-alt"></i>
-                            8 (812) 123-45-67
+                            8 (800) 123-45-67
                         </a>
                     </li>
                 </ul>
-            </section>
+            </div>
         </div>
+
     </header>
     <main>
         <!--========= section Description ==========-->
-        <section class="description">
+        <section class="description " id="description">
             <div class="container">
                 <ul class="description__list">
                     <li class="description__item">
@@ -138,25 +143,28 @@
         </section>
         <!--========= section Viewing ==========-->
         <section class="viewing">
-            <div class="text-wrapper">
-                <h2 class="section-title">Хотите посмотреть?</h2>
-                <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                    тексты.
-                    Ты вдали страна семантика вскоре раз переписывается взгляд гор несколько подпоясал пор всемогущая
-                    журчит
-                    меня дал напоивший буквенных великий заголовок, пунктуация текстами коварный своего! Запятых,
-                    скатился
-                    реторический! Встретил текстов грамматики щеке свой своих, выйти агентство буквенных родного
-                    последний,
-                    своего страну!</p>
+            <div class="container">
+                <div class="text-wrapper">
+                    <h2 class="section-title">Хотите посмотреть?</h2>
+                    <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты.
+                        Ты вдали страна семантика вскоре раз переписывается взгляд гор несколько подпоясал пор
+                        всемогущая
+                        журчит
+                        меня дал напоивший буквенных великий заголовок, пунктуация текстами коварный своего! Запятых,
+                        скатился
+                        реторический! Встретил текстов грамматики щеке свой своих, выйти агентство буквенных родного
+                        последний,
+                        своего страну!</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <span class="form__text">*Мы никому не передаем ваши данные.
+                        И не сохраняем ваш номер в базу.</span>
+                    <input type="text" placeholder="Перезвоните мне">
+                </form>
             </div>
-            <form>
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон">
-                <span class="form__text">*Мы никому не передаем ваши данные.
-                    И не сохраняем ваш номер в базу.</span>
-                <input type="text" placeholder="Перезвоните мне">
-            </form>
         </section>
         <!--========= section Video review ==========-->
         <section class="video-review">
@@ -181,14 +189,16 @@
         </section>
         <!--========= section Questions ==========-->
         <section class="questions">
-            <h2 class="section-title">Район на карте</h2>
-            <form>
-                <span class="form__text">*Мы никому не передаем ваши данные.
-                    И не сохраняем ваш номер в базу.</span>
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон">
-                <input type="text" placeholder="Перезвоните мне">
-            </form>
+            <div class="container">
+                <h2 class="section-title">Район на карте</h2>
+                <form>
+                    <span class="form__text">*Мы никому не передаем ваши данные.
+                        И не сохраняем ваш номер в базу.</span>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="text" placeholder="Перезвоните мне">
+                </form>
+            </div>
         </section>
     </main>
     <!--========= Footer ==========-->
