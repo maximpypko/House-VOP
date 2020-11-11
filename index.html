@@ -26,7 +26,8 @@
     <!--========= Header ==========-->
     <header class="header">
         <div class="container">
-            <div class="nav-wrapper">
+            <!--========= Nav ==========-->
+            <nav class="main-menu">
                 <!--========= Logo ==========-->
                 <div class="logo">
                     <a href="#" class="logo__link">
@@ -37,27 +38,47 @@
                         <span class="logo__description">Жилой комплекс</span>
                     </a>
                 </div>
-                <!--========= Nav ==========-->
-                <nav class="main-menu">
-                    <ul class="main-menu__nav">
-                        <li class="main-menu__nav-item">
-                            <a class="main-menu__nav-link" href="#description">О комплексе</a>
-                        </li>
-                        <li class="main-menu__nav-item">
-                            <a class="main-menu__nav-link" href="#">Район</a>
-                        </li>
-                        <li class="main-menu__nav-item">
-                            <a class="main-menu__nav-link" href="#">Каталог квартир</a>
-                        </li>
-                        <li class="main-menu__nav-item">
-                            <a class="main-menu__nav-link" href="#">Ипотека</a>
-                        </li>
-                        <li class="main-menu__nav-item">
-                            <a class="main-menu__nav-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="main-menu__nav">
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#description">О комплексе</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Район</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Каталог квартир</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Ипотека</a>
+                    </li>
+                    <li class="main-menu__nav-item">
+                        <a class="main-menu__nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <!-- ========== modal window ========== -->
+                <input type="checkbox" name="nav_trigger" id="nav_modal-switcher" />
+                <label for="nav_modal-switcher" class="nav_list fas fa-bars"></label>
+                <ul class="nav_modal">
+                    <li class="nav_modal-item nav_modal-item--close">
+                        <label for="nav_modal-switcher" class="menu-trigger nav_modal-link fas fa-times"></label>
+                    </li>
+                    <li class="nav_modal-item nav_modal-item--position-left">
+                        <a href="#description" class="nav_modal-link">О комплексе</a>
+                    </li>
+                    <li class="nav_modal-item">
+                        <a href="#about" class="nav_modal-link">Район</a>
+                    </li>
+                    <li class="nav_modal-item">
+                        <a href="#team" class="nav_modal-link">Каталог квартир</a>
+                    </li>
+                    <li class="nav_modal-item">
+                        <a href="#order" class="nav_modal-link">Ипотека</a>
+                    </li>
+                    <li class="nav_modal-item">
+                        <a href="#menu" class="nav_modal-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
             <!--========= section Hero ==========-->
             <div class="hero">
                 <h1 class="hero__title">Жилой комплекс в историческом центре</h1>
@@ -68,7 +89,7 @@
                     <li class="hero__contacts-item">
                         <a href="#map">
                             <i class="fas fa-map-marker-alt"></i>
-                            г. Одесса р-он Горсада
+                            г. Одесса, Соборная площадь 1
                         </a>
                     </li>
                     <li class="hero__contacts-item"><a href="tel:8 (812) 123-45-67">
@@ -79,8 +100,8 @@
                 </ul>
             </div>
         </div>
-
     </header>
+
     <main>
         <!--========= section Description ==========-->
         <section class="description " id="description">
@@ -109,6 +130,7 @@
                 <span class="numeration">&#8545</span>
             </div>
         </section>
+        <!--========= section Description end ==========-->
         <!--========= section Appartments ==========-->
         <section class="apartments">
             <div class="container">
@@ -141,6 +163,7 @@
                 </ul>
             </div>
         </section>
+        <!--========= section Appartments ==========-->
         <!--========= section Viewing ==========-->
         <section class="viewing">
             <div class="container">
@@ -167,7 +190,7 @@
             </div>
         </section>
         <!--========= section Video review ==========-->
-        <section class="video-review">
+        <!-- <section class="video-review">
             <div class="container">
                 <iframe width="900" height="650" src="https://www.youtube.com/embed/wEgif19yz6A" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -176,7 +199,7 @@
                     <img src="img/play button.png" alt="кнопка проигрывания видео">
                 </button>
             </div>
-        </section>
+        </section> -->
         <!--========= section Map ==========-->
         <section class="map" id="map">
             <div class="container">
