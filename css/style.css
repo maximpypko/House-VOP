@@ -32,6 +32,16 @@ a {
   position: relative;
 }
 
+.section-title {
+  margin-bottom: 4rem;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  color: #d4c17f;
+}
+
 .numeration {
   position: absolute;
   font-weight: bold;
@@ -274,7 +284,7 @@ a {
 
 /*========== section Description ==========*/
 .description {
-  padding: 10rem 0 20rem;
+  padding: 0 0 13rem;
 }
 
 .description .description__list {
@@ -284,9 +294,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .description .description__list .description__item {
@@ -297,6 +304,11 @@ a {
 
 .description .description__list .description__item .description__image {
   margin-bottom: 5rem;
+  color: #d4c17f;
+}
+
+.description .description__list .description__item .description__image--marginTop {
+  margin-top: 1rem;
 }
 
 .description .description__list .description__item .description__paragraph {
@@ -305,9 +317,174 @@ a {
   line-height: 2.7rem;
 }
 
+.description .description__list .description__image--marginTop {
+  margin-top: 2rem;
+}
+
 .description .numeration {
-  top: 10%;
+  top: 0;
   right: 5%;
+}
+
+/*========== section Appartments ==========*/
+.apartments {
+  margin: 0 1.5rem;
+}
+
+.apartments .apartments__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.apartments .apartments__list .apartmens__item {
+  width: 48%;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.apartments .apartments__list .apartmens__item .appartments__link {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.apartments .apartments__list .apartmens__item .appartments__link:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+}
+
+.apartments .apartments__list .apartmens__item .appartments__link .apartments__img {
+  width: 100%;
+}
+
+.apartments .apartments__list .apartmens__item .appartments__link .apartments__title {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-size: 1.85rem;
+  line-height: 2.7rem;
+}
+
+.viewing {
+  margin: 0 1.5rem;
+  padding: 18rem 0;
+  background-image: url(../img/form_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.viewing .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.viewing .content-wrapper .section-text {
+  width: 45%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.viewing .content-wrapper form {
+  width: 45%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.viewing .content-wrapper form .form__input,
+.viewing .content-wrapper form .form__button {
+  width: 45%;
+  list-style: none;
+  padding: 1.2rem;
+  margin-bottom: 3.5rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-color: rgba(255, 255, 255, 0.671);
+}
+
+.viewing .content-wrapper form .form__input::-webkit-input-placeholder,
+.viewing .content-wrapper form .form__button::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.viewing .content-wrapper form .form__input:-ms-input-placeholder,
+.viewing .content-wrapper form .form__button:-ms-input-placeholder {
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.viewing .content-wrapper form .form__input::-ms-input-placeholder,
+.viewing .content-wrapper form .form__button::-ms-input-placeholder {
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.viewing .content-wrapper form .form__input::placeholder,
+.viewing .content-wrapper form .form__button::placeholder {
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.viewing .content-wrapper form .form__text {
+  width: 45%;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.viewing .content-wrapper form .form__button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-color: rgba(255, 255, 255, 0.671);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.viewing .content-wrapper form .form__button:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
 }
 
 /*========== SMALL SCREEN ==========*/
@@ -347,6 +524,50 @@ a {
   }
   .description .description__list .description__item .description__paragraph {
     font-size: 2rem;
+  }
+  .viewing .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .viewing .content-wrapper .section-text {
+    margin-bottom: 3.5rem;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .viewing .content-wrapper form {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .viewing .content-wrapper form .form__input,
+  .viewing .content-wrapper form .form__button {
+    width: 45%;
+    padding: 1.5rem;
+  }
+  .viewing .content-wrapper form .form__input::-webkit-input-placeholder,
+  .viewing .content-wrapper form .form__button::-webkit-input-placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__input:-ms-input-placeholder,
+  .viewing .content-wrapper form .form__button:-ms-input-placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__input::-ms-input-placeholder,
+  .viewing .content-wrapper form .form__button::-ms-input-placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__input::placeholder,
+  .viewing .content-wrapper form .form__button::placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__text {
+    font-size: 1.5rem;
   }
 }
 
@@ -453,8 +674,21 @@ a {
     width: 10rem;
     height: 10rem;
   }
+  .hero .hero__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .hero .hero__contacts .hero__contacts-item {
     font-size: 2.5rem;
+  }
+  .hero .hero__contacts .hero__contacts-item + .hero__contacts-item {
+    margin-top: 3rem;
+    margin-left: 0;
   }
   .description {
     padding: 6rem 0 10rem;
@@ -479,6 +713,72 @@ a {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+  }
+  .apartments {
+    margin: 0 3rem;
+  }
+  .apartments .apartments__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .apartments .apartments__list .apartmens__item {
+    width: 100%;
+  }
+  .apartments .apartments__list .apartmens__item .appartments__link .apartments__title {
+    font-size: 3rem;
+  }
+  .viewing {
+    padding-top: 6rem;
+  }
+  .viewing .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .viewing .content-wrapper .section-text {
+    margin-bottom: 3.5rem;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .viewing .content-wrapper form {
+    width: 70%;
+  }
+  .viewing .content-wrapper form .form__input,
+  .viewing .content-wrapper form .form__button {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .viewing .content-wrapper form .form__input::-webkit-input-placeholder,
+  .viewing .content-wrapper form .form__button::-webkit-input-placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__input:-ms-input-placeholder,
+  .viewing .content-wrapper form .form__button:-ms-input-placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__input::-ms-input-placeholder,
+  .viewing .content-wrapper form .form__button::-ms-input-placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__input::placeholder,
+  .viewing .content-wrapper form .form__button::placeholder {
+    font-size: 2rem;
+  }
+  .viewing .content-wrapper form .form__text {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .viewing .content-wrapper form .form__button {
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

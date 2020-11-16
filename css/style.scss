@@ -34,6 +34,10 @@ a {
   position: relative;
 }
 
+.section-title {
+  @include sectionTitle;
+}
+
 .numeration {
   position: absolute;
   font-weight: bold;
@@ -171,17 +175,20 @@ a {
 
 /*========== section Description ==========*/
 .description {
-  padding: 10rem 0 20rem;
+  padding: 0 0 13rem;
   .description__list {
     display: flex;
     justify-content: center;
-    align-items: center;
     .description__item {
       margin: 3rem 2rem;
       width: 18%;
       text-align: center;
       .description__image {
         margin-bottom: 5rem;
+        color: $titleColor;
+      }
+      .description__image--marginTop {
+        margin-top: 1rem;
       }
       .description__paragraph {
         font-weight: 300;
@@ -189,10 +196,104 @@ a {
         line-height: 2.7rem;
       }
     }
+    .description__image--marginTop {
+      margin-top: 2rem;
+    }
   }
   .numeration {
-    top: 10%;
+    top: 0;
     right: 5%;
+  }
+}
+
+/*========== section Appartments ==========*/
+.apartments {
+  margin: 0 1.5rem;
+  .apartments__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .apartmens__item {
+      width: 48%;
+      margin-bottom: 5rem;
+      position: relative;
+      .appartments__link {
+        @include propertyLink;
+        display: block;
+        &:hover {
+          @include hoverLink;
+        }
+        .apartments__img {
+          width: 100%;
+        }
+        .apartments__title {
+          position: absolute;
+          top: 85%;
+          left: 10%;
+          font-size: 1.85rem;
+          line-height: 2.7rem;
+        }
+      }
+    }
+  }
+}
+
+.viewing {
+  margin: 0 1.5rem;
+  padding: 18rem 0;
+  background-image: url(../img/form_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .section-text {
+      width: 45%;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+    & form {
+      width: 45%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      .form__input,
+      .form__button {
+        width: 45%;
+        list-style: none;
+        padding: 1.2rem;
+        margin-bottom: 3.5rem;
+        background: transparent;
+        color: $textColor;
+
+        @include propertyLink;
+        border-color: rgba(255, 255, 255, 0.671);
+        &::placeholder {
+          font-size: 1.4rem;
+          line-height: 2.7rem;
+          color: $textColor;
+          opacity: 0.5;
+        }
+      }
+      .form__text {
+        width: 45%;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+      }
+      .form__button {
+        @include propertyLink;
+        border-color: rgba(255, 255, 255, 0.671);
+        color: $textColor;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          @include hoverLink;
+        }
+      }
+    }
   }
 }
 
@@ -244,11 +345,38 @@ a {
   .description {
     .description__list {
       flex-wrap: wrap;
-
       .description__item {
         width: 40%;
         .description__paragraph {
           font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .viewing {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      .section-text {
+        margin-bottom: 3.5rem;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      & form {
+        width: 100%;
+        justify-content: space-around;
+        .form__input,
+        .form__button {
+          width: 45%;
+          padding: 1.5rem;
+          &::placeholder {
+            font-size: 2rem;
+          }
+        }
+        .form__text {
+          font-size: 1.5rem;
         }
       }
     }
@@ -336,8 +464,14 @@ a {
       height: 10rem;
     }
     .hero__contacts {
+      flex-direction: column;
+      align-items: center;
       .hero__contacts-item {
         font-size: 2.5rem;
+      }
+      .hero__contacts-item + .hero__contacts-item {
+        margin-top: 3rem;
+        margin-left: 0;
       }
     }
   }
@@ -363,6 +497,55 @@ a {
     .numeration {
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+
+  .apartments {
+    margin: 0 3rem;
+    .apartments__list {
+      flex-direction: column;
+      .apartmens__item {
+        width: 100%;
+        .appartments__link {
+          .apartments__title {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .viewing {
+    padding-top: 6rem;
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      .section-text {
+        margin-bottom: 3.5rem;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      & form {
+        width: 70%;
+        .form__input,
+        .form__button {
+          width: 100%;
+          padding: 1.5rem;
+          margin-bottom: 1.5rem;
+          &::placeholder {
+            font-size: 2rem;
+          }
+        }
+        .form__text {
+          width: 100%;
+          margin-bottom: 1.5rem;
+          font-size: 1.5rem;
+        }
+        .form__button {
+          margin-top: 2rem;
+        }
+      }
     }
   }
 }

@@ -83,7 +83,7 @@
             <div class="hero">
                 <h1 class="hero__title">Жилой комплекс в историческом центре</h1>
                 <a href="#description" class="hero__nav-down">
-                    <img src="img/mouse.svg" alt="навигация вниз">
+                    <img src="img/mouse-down.svg" alt="навигация вниз">
                 </a>
                 <ul class="hero__contacts">
                     <li class="hero__contacts-item">
@@ -109,7 +109,8 @@
                 <ul class="description__list">
                     <li class="description__item">
                         <img src="img/bench.svg" alt="логотип парка и сквера" class="description__image">
-                        <p class="description__paragraph">Рядом исторические парки и скверы</p>
+                        <p class="description__paragraph">Рядом
+                            исторические парки и скверы</p>
                     </li>
                     <li class="description__item">
                         <img src="img/building.svg" alt="логотип здания" class="description__image">
@@ -121,8 +122,9 @@
                         <p class="description__paragraph">10 фонтанов
                             на территории</p>
                     </li>
-                    <li class="description__item">
-                        <img src="img/bicycle.svg" alt="логотип велосипеда" class="description__image">
+                    <li class="description__item description__item--marginTop">
+                        <img src="img/bicycle.svg" alt="логотип велосипеда"
+                            class="description__image description__image--marginTop">
                         <p class="description__paragraph">6 км
                             велодорожек</p>
                     </li>
@@ -163,12 +165,11 @@
                 </ul>
             </div>
         </section>
-        <!--========= section Appartments ==========-->
         <!--========= section Viewing ==========-->
         <section class="viewing">
             <div class="container">
-                <div class="text-wrapper">
-                    <h2 class="section-title">Хотите посмотреть?</h2>
+                <h2 class="section-title">Хотите посмотреть?</h2>
+                <div class="content-wrapper">
                     <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
                         тексты.
                         Ты вдали страна семантика вскоре раз переписывается взгляд гор несколько подпоясал пор
@@ -179,14 +180,15 @@
                         реторический! Встретил текстов грамматики щеке свой своих, выйти агентство буквенных родного
                         последний,
                         своего страну!</p>
+
+                    <form>
+                        <input type="text" placeholder="Ваше имя" class="form__input">
+                        <input type="text" placeholder="Ваш телефон" class="form__input">
+                        <span class="form__text">*Мы никому не передаем ваши данные.
+                            И не сохраняем ваш номер в базу.</span>
+                        <button class="form__button">Перезвоните мне</button>
+                    </form>
                 </div>
-                <form>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="Ваш телефон">
-                    <span class="form__text">*Мы никому не передаем ваши данные.
-                        И не сохраняем ваш номер в базу.</span>
-                    <input type="text" placeholder="Перезвоните мне">
-                </form>
             </div>
         </section>
         <!--========= section Video review ==========-->

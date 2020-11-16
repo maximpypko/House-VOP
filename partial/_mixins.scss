@@ -9,3 +9,15 @@
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
 }
+
+@mixin sectionTitle {
+  margin-bottom: 4rem;
+
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+
+  color: $titleColor;
+}
